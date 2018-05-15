@@ -1,0 +1,11 @@
+{
+  "public": [
+    "server/endpoints/routes/default"
+  ],
+  "auth": [
+
+  ],
+  "protected": [
+
+  ]
+}

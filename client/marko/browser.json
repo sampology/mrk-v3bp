@@ -1,0 +1,7 @@
+{
+  "dependencies": [
+    "require: ./layouts/**/index.js",
+    "require: ./modules/**/index.js",
+    "require: ./components/**/index.js"
+  ]
+}

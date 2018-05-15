@@ -1,0 +1,12 @@
+<lasso-page package-path="./browser.json"/>
+<layout-use(data.skeleton, data)>
+  <layout-put into="seo_title" if(data.seo && data.seo.title)>
+    <title>$!{data.seo.title}</title>
+  </layout-put>
+  <layout-put into="seo_description" if(data.seo && data.seo.description)>
+    <meta name="description" content="${data.seo.description}"/>
+  </layout-put>
+  <layout-put into="controller">
+    <app-controller tpl=data.tpl />
+  </layout-put>
+</layout-use>

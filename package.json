@@ -1,0 +1,82 @@
+{
+  "name": "mrk-v3bp",
+  "private": true,
+  "version": "1.0.0",
+  "description": "markojs3koajs2",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sampology/mrk-v3bp.git"
+  },
+  "keywords": [
+    "marko",
+    "js",
+    "koa",
+    "js"
+  ],
+  "author": "AM",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/sampology/mrk-v3bp/issues"
+  },
+  "engines": {
+    "node": ">= 8.0.0"
+  },
+  "homepage": "https://github.com/sampology/mrk-v3bp#readme",
+  "dependencies": {
+    "app-module-path": "2.2.0",
+    "axios": "^0.13.1",
+    "babel-polyfill": "^6.26.0",
+    "base-64": "^0.1.0",
+    "bluebird": "^3.5.1",
+    "ftp": "^0.3.10",
+    "jquery": "3.3.1",
+    "koa": "^2.4.1",
+    "koa-bodyparser": "^3.2.0",
+    "koa-cache-control": "^2.0.0",
+    "koa-compress": "^2.0.0",
+    "koa-conditional-get": "^2.0.0",
+    "koa-etag": "^3.0.0",
+    "koa-favicon": "^2.0.0",
+    "koa-flash-simple": "0.0.3",
+    "koa-helmet": "^2.0.0",
+    "koa-mount": "^3.0.0",
+    "koa-passport": "^4.0.1",
+    "koa-passport-remember-me": "^0.1.3",
+    "koa-qs": "^2.0.0",
+    "koa-router": "^7.3.0",
+    "koa-session-minimal": "^3.0.3",
+    "koa-static": "^4.0.1",
+    "lasso": "2.11.24",
+    "lasso-autoprefixer": "^2.0.0",
+    "lasso-babel-transform": "^1.0.1",
+    "lasso-less": "^2.4.7",
+    "lasso-marko": "2.3.1",
+    "lasso-sass": "^3.0.0",
+    "lodash": "^4.17.4",
+    "marko": "3.14.3",
+    "marko-widgets": "6.6.6",
+    "md5": "^2.2.1",
+    "moment": "^2.20.1",
+    "node-sass": "^4.7.2",
+    "nodemailer": "^4.4.1",
+    "passport-facebook": "^2.1.1",
+    "passport-google-oauth": "^1.0.0",
+    "passport-local": "^1.0.0",
+    "raptor-pubsub": "1.0.5",
+    "shortid": "^2.2.6",
+    "sync-request": "^4.1.0",
+    "uuid": "^2.0.2",
+    "validate.js": "^0.12.0"
+  },
+  "devDependencies": {
+    "babel-core": "^6.26.0",
+    "babel-preset-env": "^1.6.1",
+    "babel-register": "^6.26.0",
+    "browser-refresh": "^1.7.2",
+    "browser-refresh-taglib": "^1.1.0"
+  }
+}

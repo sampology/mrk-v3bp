@@ -1,0 +1,7 @@
+node_modules
+/orders
+/static
+*.marko.js
+.*
+*.CSV
+style/*

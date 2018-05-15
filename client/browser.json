@@ -1,0 +1,41 @@
+{
+  "dependencies": [
+    "jquery/dist/jquery.js",
+    "require: marko-widgets",
+    {
+      "type": "js",
+      "url": "https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.js",
+      "external": false
+    },
+    {
+      "type": "js",
+      "url": "https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.1/js/bootstrap.js",
+      "external": false
+    },
+    {
+      "type": "js",
+      "url": "https://cdnjs.cloudflare.com/ajax/libs/es6-promise/4.1.1/es6-promise.auto.js",
+      "external": false
+    },
+    "./theme/izitoast/js/iziToast.js",
+    {
+      "type": "css",
+      "url": "https://fonts.googleapis.com/css?family=Maven+Pro:400,500,700,900"
+    },
+    {
+      "type": "css",
+      "url": "https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css"
+    },
+    {
+      "type": "css",
+      "url": "https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css"
+    },
+    "./theme/bootstrap/scss/bootstrap.scss",
+    "./theme/font-awesome-5/scss/fontawesome.scss",
+    "./theme/font-awesome-5/scss/fa-solid.scss",
+    "./theme/font-awesome-5/scss/fa-regular.scss",
+    "./theme/font-awesome-5/scss/fa-brands.scss",
+    "./theme/izitoast/css/iziToast.css",
+    "./marko/browser.json"
+  ]
+}
