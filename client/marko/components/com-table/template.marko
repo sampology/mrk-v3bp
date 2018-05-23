@@ -1,0 +1,40 @@
+<div class="col-md-12 col-lg-12 col-sm-12" w-bind>
+  <h1 class="display-1">Bun venit, ${data.name}!</h1>
+
+  <form class="form-row">
+    <div class="col-3">
+      <input type="text" class="form-control" w-id="nume" placeholder="Nume">
+    </div>
+    <div class="col-3">
+      <input type="text" class="form-control" w-id="prenume" placeholder="prenume">
+    </div>
+    <div class="col-3">
+      <input type="number" class="form-control" w-id="suma" placeholder="$$$">
+    </div>
+    <div class="col-2">
+      <button type="submit" w-onclick="addPayment" class="btn btn-primary">Add this payment</button>
+    </div>
+  </form>
+  <hr />
+  <table class="table">
+    <thead>
+      <tr>
+        <th scope="col">Nume</th>
+        <th scope="col">Prenume</th>
+        <th scope="col">Datorie</th>
+        <!-- <th scope="col">#</th> -->
+      </tr>
+    </thead>
+    <tbody>
+      <for(drunk in data.drunks)>
+        <tr>
+          <td>${drunk.nume}</td>
+          <td>${drunk.prenume}</td>
+          <td>${drunk.suma} lei</td>
+          <!--  De ce nu functioneaza ? Check index.js -->
+          <!-- <td><button type="button" w-onClick="deleteMoney(${data.drunks.indexOf(drunk)})" class="btn btn-danger">X</button></td> -->
+        </tr>
+      </for>
+    </tbody>
+  </table>
+</div>

@@ -2,10 +2,12 @@ const defineComponent = require('marko-widgets').defineComponent;
 module.exports = defineComponent({
   template: require('./template.marko'),
 
-  getInitialState (input) {
+  getInitialState (input)
+  {
     const renderHelper = 0;
     const buttons = [
-      {
+    {
+
         linkURL: 'https://google.com',
         linkLabel: 'Google'
       },
@@ -29,7 +31,6 @@ module.exports = defineComponent({
 
   addButton (ev, el) {
     ev.preventDefault();
-
     const { buttons } = this.state;
     let { renderHelper } = this.state;
     const button = {
@@ -38,6 +39,19 @@ module.exports = defineComponent({
     };
 
     buttons.push(button);
+    renderHelper++;
+
+    return this.setState({
+      buttons,
+      renderHelper
+    })
+  },
+
+  removeButton (ev, el) {
+    ev.preventDefault();
+    let { renderHelper } = this.state;
+    const { buttons } = this.state;
+    buttons.pop();
     renderHelper++;
 
     return this.setState({

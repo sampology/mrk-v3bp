@@ -112,6 +112,7 @@ app.use(cacheControl({
   staleWhileRevalidate: 320,
   staleIfError: 404
 }));
+
 app.use(favicon('./static/img/favicon.ico'));
 app.use(conditional());
 app.use(etag());
