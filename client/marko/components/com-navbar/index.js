@@ -24,7 +24,7 @@ module.exports = defineComponent({
         const obiect = { Text: titlu, Link: link};
         Links.push(obiect);
         RenderHelper ++;
-        return this.setState({ Links, Renderhelper });
+        return this.setState({ Links, RenderHelper });
     },
     init() {
         this.subscribeTo(_Emitter)
