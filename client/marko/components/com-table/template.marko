@@ -12,29 +12,35 @@
       <input type="number" class="form-control" w-id="suma" placeholder="$$$">
     </div>
     <div class="col-2">
-      <button type="submit" w-onclick="addPayment" class="btn btn-primary">Add this payment</button>
+      <button type="button" w-onclick="addPayment" class="btn btn-primary">Add this payment</button>
     </div>
   </form>
   <hr />
+  <div class="alert alert-${data.status === 'primary' ? 'primary' : data.status}" role="alert">
+  A simple primary alert—check it out!
+  </div>
+
   <table class="table">
     <thead>
       <tr>
         <th scope="col">Nume</th>
         <th scope="col">Prenume</th>
         <th scope="col">Datorie</th>
-        <!-- <th scope="col">#</th> -->
+        <th scope="col">#</th>
       </tr>
     </thead>
     <tbody>
-      <for(drunk in data.drunks)>
+      <for(index,drunk in data.drunks)>
         <tr>
           <td>${drunk.nume}</td>
           <td>${drunk.prenume}</td>
           <td>${drunk.suma} lei</td>
-          <!--  De ce nu functioneaza ? Check index.js -->
-          <!-- <td><button type="button" w-onClick="deleteMoney(${data.drunks.indexOf(drunk)})" class="btn btn-danger">X</button></td> -->
+          <td><button type="button" w-onClick="deleteMoney" data-index=index class="btn btn-danger">X</button></td>
         </tr>
       </for>
     </tbody>
   </table>
+  <div>
+    <button type="button" w-onClick="addNavbar" class="btn btn-primary">Add on NavBar</button>
+  </div>
 </div>
