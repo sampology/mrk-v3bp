@@ -63,6 +63,7 @@
     "moment": "^2.20.1",
     "node-sass": "^4.7.2",
     "nodemailer": "^4.4.1",
+    "owl.carousel": "^2.3.4",
     "passport-facebook": "^2.1.1",
     "passport-google-oauth": "^1.0.0",
     "passport-local": "^1.0.0",

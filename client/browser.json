@@ -36,6 +36,8 @@
     "./theme/font-awesome-5/scss/fa-regular.scss",
     "./theme/font-awesome-5/scss/fa-brands.scss",
     "./theme/izitoast/css/iziToast.css",
+    "owl.carousel/dist/owl.carousel.js",
+    "owl.carousel/dist/assets/owl.carousel.css",
     "./marko/browser.json"
   ]
 }

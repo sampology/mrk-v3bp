@@ -7,7 +7,7 @@ module.exports = (ctx) => {
   ctx.type = 'text/html; charset=utf-8';
   ctx.status = 200;
   const seo = {
-    title: 'Page: /',
+    title: 'Blog Template For Bootstrap',
     description: ''
   };
 

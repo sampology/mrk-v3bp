@@ -1,10 +1,9 @@
-<main w-bind>
-  <div class="container">
-    <div class="row">
-      <div class="col">
-        <!-- <com-jumbotron /> -->
-        <com-table name="Andrei" />
-      </div>
-    </div>
-  </div>
-</main>
+<div class="col-md-8 blog-main" w-bind>
+    <h3 class="pb-3 mb-4 font-italic border-bottom">${data.Headline}</h3>
+    <com-blog-post title="Sample blog post" author="Mark" />
+    <com-blog-post title="New Features" author="Chris" />
+    <nav class="blog-pagination">
+        <a class="btn btn-outline-primary" href="#">Older</a>
+        <a class="btn btn-outline-secondary disabled" href="#">Newer</a>
+    </nav>
+</div>

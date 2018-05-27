@@ -1,9 +1,12 @@
-<header w-bind>
-  <div class="container">
-    <div class="row">
-      <div class="col">
-        <com-navbar />
-      </div>
-    </div>
+<div class="container" w-bind>
+  <com-header title="Andrei's blog"/>
+  <com-navbar />
+  <com-slider 
+    title="Title of a longer featured blog post"
+    summary="Multiple lines of text that form the lede, informing new readers quickly and efficiently about what's most interesting in this post's contents." 
+  />
+  <div class="row mb-2">
+    <com-data-box design="1" type="1" title="Featured Post" /> 
+    <com-data-box design="1" type="2" title="Post title" /> 
   </div>
-</header>
+</div>
