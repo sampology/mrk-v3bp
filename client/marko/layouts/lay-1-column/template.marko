@@ -1,3 +1,12 @@
 <layout-placeholder name="header"/>
-<layout-placeholder name="main"/>
+<main role="main" class="container">
+    <div class="row">
+        <div class="col-md-8 blog-main">
+            <layout-placeholder name="main"/>
+        </div>
+        <aside class="col-md-4 blog-sidebar">
+            <layout-placeholder name="sidebar"/>
+        </aside>
+    </div>
+</main>
 <layout-placeholder name="footer"/>

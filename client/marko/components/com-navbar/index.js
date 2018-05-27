@@ -18,18 +18,22 @@ module.exports = defineComponent({
             Links
         };
     },
+
     InsertLink: function(titlu, link)
     {
         const { Links } = this.state;
+        let { RenderHelper } = this.state;
         const obiect = { Text: titlu, Link: link};
         Links.push(obiect);
         RenderHelper ++;
+        console.log('chemat');
         return this.setState({ Links, RenderHelper });
     },
     init() {
+        const self = this;
         this.subscribeTo(_Emitter)
         .on('AddNavbarLink', function (titlu, link) {
-            return this.InsertLink(titlu, link);
+            return self.InsertLink(titlu, link);
             // Uncaught TypeError: this.InsertLink is not a function => Dar este definit mai sus, why ?
         });
         // Am fost nevoit sa creez functia mai sus deoarece nu am state in Init()
