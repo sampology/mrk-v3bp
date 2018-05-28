@@ -2,8 +2,7 @@ const defineComponent = require('marko-widgets').defineComponent;
 
 module.exports = defineComponent({
     template: require('./template.marko'),
-    getInitialState (input)
-    {
+    getTemplateData: function (state, input) {
         const data = { title: input.title, links: input.links }
         let lista;
         if(data.links == 1)
@@ -27,11 +26,6 @@ module.exports = defineComponent({
                 { text: 'Facebook', link: '#' }
             ];    
         }
-        return { data, lista }
-    },
-    getTemplateData: function (state, input) {
-        const { data } = state;
-        const { lista } = state;
         return { data, lista }
     }
 });

@@ -2,8 +2,7 @@ const defineComponent = require('marko-widgets').defineComponent;
 
 module.exports = defineComponent({
     template: require('./template.marko'),
-    getInitialState (input)
-    {
+    getTemplateData: function (state, input) {
         const links = [
             { name: 'World', href: 'https://www.google.ro' },
             { name: 'U.S', href: 'https://www.google.ro' },
@@ -19,11 +18,5 @@ module.exports = defineComponent({
             { name: 'Travel', href: 'https://www.google.ro' }
         ];
         return { links }
-    },
-    getTemplateData: function (state, input) {
-        const { links } = state;
-        return {
-            links
-        };
     }
 });
