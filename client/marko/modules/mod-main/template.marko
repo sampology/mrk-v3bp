@@ -4,15 +4,14 @@
         summary="Multiple lines of text that form the lede, informing new readers quickly and efficiently about what's most interesting in this post's contents." 
     />
     <div class="row mb-2">
-    <com-data-box for(Box in data.Boxes) type="${Box.Type}" feature="${Box.Feature}" title="${Box.Title}" /> 
+        <com-data-box for(box in data.boxes) type="${box.type}" feature="${box.feature}" title="${box.title}" /> 
     </div>
+    <com-modals />
 </div>
-<!-- Am fost nevoit sa mut aici, singura rezolvare alternativa sa fac un sub-header component. 
-Intrebare: Pot lasa un div deschis intr-un component si inchis in altul ?  -->
 
 <div class="col-md-8 blog-main">
-    <h3 class="pb-3 mb-4 font-italic border-bottom">${data.Headline}</h3>
-    <com-blog-post for(Post in data.Articole) title="${Post.Title}" author="${Post.Author}" />
+    <h3 class="pb-3 mb-4 font-italic border-bottom">${data.headline}</h3>
+    <com-blog-post for(post in data.articole) title="${post.title}" author="${post.author}" />
     <nav class="blog-pagination">
         <a class="btn btn-outline-primary" href="#">Older</a>
         <a class="btn btn-outline-secondary disabled" href="#">Newer</a>

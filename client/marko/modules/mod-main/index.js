@@ -1,20 +1,21 @@
 const defineComponent = require('marko-widgets').defineComponent;
+
 module.exports = defineComponent({
   template: require('./template.marko'),
   getTemplateData: function (state, input) {
-    const { Headline } = input;
-    const Articole = [
-      { Title: 'Sample post title', Author: 'Marian' },
-      { Title: 'Sample post title', Author: 'Gheorghe' }
-    ]; 
-    const Boxes = [
-      { Type: '1', Feature: 'World', Title: 'Featured post' },
-      { Type: '2', Feature: 'Design', Title: 'Post title' }
+    const { headline } = input;
+    const articole = [
+      { title: 'Sample post title', author: 'Marian' },
+      { title: 'Sample post title', author: 'Gheorghe' }
+    ];
+    const boxes = [
+      { type: '1', feature: 'World', title: 'Featured post' },
+      { type: '2', feature: 'Design', title: 'Post title' }
     ];
     return {
-      Headline,
-      Articole,
-      Boxes
+      headline,
+      articole,
+      boxes
     };
   }
 });

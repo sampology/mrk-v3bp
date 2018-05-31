@@ -1,0 +1,33 @@
+<div w-bind>
+
+<if (data.results)>
+  <for (result in data.results)>
+    <div class="col-md-12">
+      <div class="alert alert-success" role="alert">
+        <strong>${result.field}</strong> has this value: ${result.value}
+      </div>
+    </div>
+  </for>
+</if>
+
+<if (data.modal)>
+  <div class="modal fade" w-id="modal" tabindex="-1" role="dialog" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title"> ${data.modal.text}</h5>
+        </div>
+        <div class="modal-body">
+        <for (input in data.modal.inputs)>
+          <com-input type=input.type name=input.name placeholder=input.placeholder />
+        </for>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" w-onClick="closeDialog">Close</button>
+          <button type="button" class="btn btn-primary" w-onClick="saveModal">Save changes</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</if>
+</div>
